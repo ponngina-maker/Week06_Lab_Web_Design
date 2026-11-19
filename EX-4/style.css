@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.content {
+    width: clamp(300px, 50%, 800px);
+    padding: 30px 50px;
+    background-color: #22c55e;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Default (Desktop / Large Screens): Show BIG, hide SMALL */
+.small {
+    display: none;
+}
+
+.big {
+    display: inline;
+}
+
+/* Mobile / Small Screens (768px and below): Show SMALL, hide BIG */
+@media only screen and (max-width: 768px) {
+    .content{
+        background-color: red;
+    }
+    .small {
+        display: inline;
+    }
+
+    .big {
+        display: none;
+    }
+}

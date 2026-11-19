@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+}
+.container{
+    display: flex;
+    background-color: gray;
+    padding: 25px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+#home, #about, #service, #contact{
+    display: flex;
+    justify-items: flex-end;
+}
+.menu-btn{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .menu-btn {
+        display: block;
+        font-size: 26px;
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+    }
+}
